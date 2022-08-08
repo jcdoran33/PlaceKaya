@@ -9,7 +9,10 @@ exports.handler = async (event, context) => {
     const paramsPath = path.replace('/.netlify/functions/placeholder', '');
     const [width, height, background] = paramsPath.split('/').filter(param => !!param);
     
-    const url = cloudinary.url('kaya_edit_1');
+    const url = cloudinary.url('kaya_edit_1', {
+        width,
+        height
+    });
     console.log("url: ", url);
     
     return {
