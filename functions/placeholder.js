@@ -1,3 +1,5 @@
+const cloudinary = require('cloudinary').v2;
+
 exports.handler = async (event, context) => {
     const { path } = event;
     const paramsPath = path.replace('/.netlify/functions/placeholder', '');
