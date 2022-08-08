@@ -1,5 +1,9 @@
 const cloudinary = require('cloudinary').v2;
 
+cloudinary.config({
+    cloud_name: 'dzolcdtoy'
+});
+
 exports.handler = async (event, context) => {
     const { path } = event;
     const paramsPath = path.replace('/.netlify/functions/placeholder', '');
