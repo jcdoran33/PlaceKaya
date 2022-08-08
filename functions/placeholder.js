@@ -11,12 +11,17 @@ exports.handler = async (event, context) => {
     
     const url = cloudinary.url('kaya_edit_1', {
         width,
-        height
+        height,
+        effect: 'colorize',
+        color: `#${background}`
     });
     console.log("url: ", url);
     
     return {
-        statusCode: 200,
-        body: JSON.stringify({status: 'Ok'})
+        statusCode: 302,
+        // body: JSON.stringify({status: 'Ok'})
+        headers: {
+            Location: url
+        }
     }
 };
