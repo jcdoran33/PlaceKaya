@@ -1,6 +1,7 @@
 const cloudinary = require('cloudinary').v2;
 
 cloudinary.config({
+    secure: true,
     cloud_name: 'dzolcdtoy'
 });
 
@@ -9,11 +10,11 @@ exports.handler = async (event, context) => {
     const paramsPath = path.replace('/.netlify/functions/placeholder', '');
     const [width, height, background] = paramsPath.split('/').filter(param => !!param);
     
-    const url = cloudinary.url('kaya_edit_1', {
+    const url = cloudinary.url('kaya2', {
         width,
         height,
-        effect: 'colorize',
-        color: `#${background}`
+        // effect: 'colorize',
+        // color: `#${background}`
     });
     console.log("url: ", url);
     
