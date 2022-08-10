@@ -12,7 +12,7 @@
 <body>
     <!-- Header Start -->
     <div class="row header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="kaya-icon" src="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval/v1659983967/Kaya/kaya.jpg" alt="Kaya icon"/>
                 placeKaya.com
@@ -33,7 +33,8 @@
     <!-- Header End -->
     <!-- Main Content Start -->
     <div class="row m-2 p-2 container-fluid main-content">
-        <div class="col-4">
+        
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
         <h1>Instructions / Getting Started</h1>
             <div class="row m-1 p-1">
                 <p>To use Kaya as a placeholder image, you need to insert a placeKaya URL as your image's src atrribute.</p>
@@ -54,14 +55,18 @@
         <div class="col-2">
             <!-- placeholder/spacer column -->
         </div>
-        <div class="row col-4">
+        
+        <div class="row col-lg-4 col-md-6 col-sm-6 col-xs-6">
             <div class="card-img-top p-1 m-1">
-                <img src="http://www.placekaya.com/img/600/400" alt="example kaya image">
+                <img src="http://www.placekaya.com/img/600/400" alt="example kaya image" id="example-img">
                 <div class="card-body">
-                    <p class="card-text">This is an example image that can be fetched through a placeKaya URL (dimensions here are 600px width x 400px height)</p>
+                    <p class="card-text">This is an example image that can be fetched through a placeKaya URL (dimensions in URL are 600px width x 400px height, but picture is set to resize with the size of this window)</p>
                 </div>
             </div>
         </div>
+        
+
+
     </div>
     <!-- Main Content End -->
     <!-- Footer Start -->
