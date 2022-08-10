@@ -1,7 +1,17 @@
 [build]
     functions = "functions"
 
+# [[redirects]]
+#     from = "/*"
+#     to = "/.netlify/functions/placeholder/:splat"
+#     status = 200
+
 [[redirects]]
-    from = "/*"
+    from = "/"
+    to = "/index.html"
+    status = 200
+
+[[redirects]]
+    from = "/img/*"
     to = "/.netlify/functions/placeholder/:splat"
     status = 200

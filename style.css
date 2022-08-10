@@ -1,0 +1,5 @@
+/* adjust size of kaya icon for nav bar */
+#kaya-icon {
+    max-width: 50px;
+    max-height:50px;
+}
