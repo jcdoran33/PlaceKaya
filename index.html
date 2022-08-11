@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval/v1659983967/Kaya/kaya.jpg">
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +13,7 @@
 <body>
     <!-- Header Start -->
     <div class="row header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="kaya-icon" src="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval/v1659983967/Kaya/kaya.jpg" alt="Kaya icon"/>
                 placeKaya.com
@@ -35,7 +36,15 @@
     <div class="row m-2 p-2 container-fluid main-content">
         
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-        <h1>Instructions / Getting Started</h1>
+        <!-- <h1>Getting Started</h1> -->
+            <div class="row">
+                <!-- space filler row --><br/><br/><br/>
+            </div>
+            <div class="row m-1 p-1 border border-light rounded intro text-center">
+                <p>placeKaya is the web's cutest placeholder image service. <br/><br/>
+                    placeKaya will provide a randomized image of Kaya (a very good girl) in the dimensions set in the URL parameters.</p>
+            </div>
+            <h1>Getting Started</h1>
             <div class="row m-1 p-1">
                 <p>To use Kaya as a placeholder image, you need to insert a placeKaya URL as your image's src atrribute.</p>
             </div>
@@ -43,10 +52,13 @@
                 <p>You can specify the <strong>width</strong> and <strong>height</strong> of the image you want placeKaya to serve to your site.</p>
             </div>
             <div class="row m-1 p-1">
+                <p>The URL syntax for placeKaya is as follows: https://www.placekaya.com/img/{width-in-px}/{height-in-px}</p>
+            </div>
+            <div class="row m-1 p-1">
                 <p>Below is an example URL:</p>
             </div>
             <div class="row m-1 p-1">
-                <p>http://www.placekaya.com/img/900/600</p>
+                <p>https://www.placekaya.com/img/900/600</p>
             </div>
             <div class="row m-1 p-1">
                 <p>The numbers after the domain name and img segment in the URL (in this case, /900/600) specify the width and the height of the image. In this example, placeKaya would provide an image that is 900 pixels in width and 600 pixels in height.</p>
@@ -58,7 +70,8 @@
         
         <div class="row col-lg-4 col-md-6 col-sm-6 col-xs-6">
             <div class="card-img-top p-1 m-1">
-                <img src="http://www.placekaya.com/img/600/400" alt="example kaya image" id="example-img">
+                <p><br/><br/></p>
+                <img src="https://www.placekaya.com/img/600/400" alt="example kaya image" id="example-img">
                 <div class="card-body">
                     <p class="card-text">This is an example image that can be fetched through a placeKaya URL (dimensions in URL are 600px width x 400px height, but picture is set to resize with the size of this window)</p>
                 </div>
@@ -74,5 +87,9 @@
 
     </div>
     <!-- Footer End -->
+    <!-- Bootstrap CDN links for jQuery/JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
