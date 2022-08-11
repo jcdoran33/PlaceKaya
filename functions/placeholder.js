@@ -10,7 +10,9 @@ exports.handler = async (event, context) => {
     const paramsPath = path.replace('/.netlify/functions/placeholder', '');
     const [img, width, height, background] = paramsPath.split('/').filter(param => !!param);
     
-    const max = 4; //update this max value as we add new pictures to cloudinary
+    const max = 9; //update this max value as we add new pictures to cloudinary. 
+    //This max should be set to +1 of the highest number image in Cloudinary
+    //So if the latest image in clodinary is "kaya6", max should be set to 7 (because math.random is exclusive of the max number)
     //define function to pick a random number to append to kaya in cloudinary public ID below (url definition)
     function randomNum(max) {
         return Math.floor(Math.random() * max);
