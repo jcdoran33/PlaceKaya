@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval/v1659983967/Kaya/kaya.jpg">
+    <link rel="icon" href="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval,b_rgb:f8f9fa/v1659983967/Kaya/kaya.jpg">
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -14,8 +14,8 @@
     <!-- Header Start -->
     <div class="row header">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light container-fluid">
-            <a class="navbar-brand" href="#">
-                <img id="kaya-icon" src="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval/v1659983967/Kaya/kaya.jpg" alt="Kaya icon"/>
+            <a class="navbar-brand" href="/">
+                <img id="kaya-icon" src="https://res.cloudinary.com/dzolcdtoy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,e_bgremoval,b_rgb:f8f9fa/v1659983967/Kaya/kaya.jpg" alt="Kaya icon"/>
                 placeKaya.com
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +24,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="./about.html">About</a>
-                <a class="nav-item nav-link" href="./contact.html">Contact</a>
+                <a class="nav-item nav-link" href="./pages/about.html">About</a>
+                <a class="nav-item nav-link" href="./pages/contact.html">Contact</a>
                 <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
               </div>
             </div>
@@ -42,26 +42,26 @@
             </div>
             <div class="row m-1 p-1 border border-light rounded intro text-center">
                 <p>placeKaya is the web's cutest placeholder image service. <br/><br/>
-                    placeKaya will provide a randomized image of Kaya (a very good girl) in the dimensions set in the URL parameters.</p>
+                    placeKaya will provide a randomized image of Kaya in the dimensions set in the URL parameters.</p>
             </div>
-            <h1>Getting Started</h1>
+            <h1>Getting Started &#128021;</h1>
             <div class="row m-1 p-1">
                 <p>To use Kaya as a placeholder image, you need to insert a placeKaya URL as your image's src atrribute.</p>
             </div>
             <div class="row m-1 p-1">
-                <p>You can specify the <strong>width</strong> and <strong>height</strong> of the image you want placeKaya to serve to your site.</p>
+                <p>You can specify the <span class="orange"><strong>width</strong></span> and <span class="green"><strong>height</strong></span> of the image you want placeKaya to provide.</p>
             </div>
             <div class="row m-1 p-1">
-                <p>The URL syntax for placeKaya is as follows: https://www.placekaya.com/img/{width-in-px}/{height-in-px}</p>
+                <p>The URL syntax for placeKaya is as follows: <code>https://www.placekaya.com/img/<span class="orange">{width-in-px}</span>/<span class="green">{height-in-px}</span></code></p>
             </div>
             <div class="row m-1 p-1">
                 <p>Below is an example URL:</p>
             </div>
             <div class="row m-1 p-1">
-                <p>https://www.placekaya.com/img/900/600</p>
+                <p><code>https://www.placekaya.com/img/<span class="orange">900</span>/<span class="green">600</span></code></p>
             </div>
             <div class="row m-1 p-1">
-                <p>The numbers after the domain name and img segment in the URL (in this case, /900/600) specify the width and the height of the image. In this example, placeKaya would provide an image that is 900 pixels in width and 600 pixels in height.</p>
+                <p>The numbers after the domain name and img segment in the URL (in this case, /900/600) specify the width and the height of the image. In this example, placeKaya would provide an image that is <span class="orange">900</span> pixels in <span class="orange">width</span> and <span class="green">600</span> pixels in <span class="green">height</span>.</p>
             </div>
         </div>
         <div class="col-2">
@@ -69,11 +69,11 @@
         </div>
         
         <div class="row col-lg-4 col-md-6 col-sm-6 col-xs-6">
-            <div class="card-img-top p-1 m-1">
+            <div class="card-img-top p-1 m-1 text-center">
                 <p><br/><br/></p>
                 <img src="https://www.placekaya.com/img/600/400" alt="example kaya image" id="example-img">
                 <div class="card-body">
-                    <p class="card-text">This is an example image that can be fetched through a placeKaya URL (dimensions in URL are 600px width x 400px height, but picture is set to resize with the size of this window)</p>
+                    <p class="card-text m-1 p-1 border border-light rounded ex-img-desc text-center">This is an example image that was provided by a placeKaya URL (<code>https://www.placekaya.com/img/600/400</code>)</p>
                 </div>
             </div>
         </div>
@@ -83,9 +83,11 @@
     </div>
     <!-- Main Content End -->
     <!-- Footer Start -->
-    <div class="footer">
-
-    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted footer-text">&#128021; placeKaya &copy;</span>
+        </div>
+    </footer>
     <!-- Footer End -->
     <!-- Bootstrap CDN links for jQuery/JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
