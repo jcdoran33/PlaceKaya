@@ -18,3 +18,17 @@
     background-color: rgba(245, 245, 245, 0.564);
     font-style: italic;
 }
+/* example image description on home page */
+.ex-img-desc {
+    background-color: rgba(245, 245, 245, 0.564);
+    font-style: italic;
+    font-size:smaller;
+}
+
+/*  for orange class - color coding widthtext on hpmepage */
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
