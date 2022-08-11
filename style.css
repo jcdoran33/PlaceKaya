@@ -11,3 +11,9 @@
     /* min-width: 50%;
     min-height: 50%; */
 }
+
+/* intro paragraph on home page */
+.intro {
+    background-color: rgba(245, 245, 245, 0.564);
+    font-style: italic;
+}
