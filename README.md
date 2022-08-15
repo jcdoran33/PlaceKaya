@@ -24,6 +24,8 @@ The numbers after the domain name and img segment in the URL (in this case, /900
 
 This site and service was created by Jack Doran, as a tribute to the cuteness of my dog, Kaya. I will continue to develop this site, add additional pictures, and hopefully add more functionality for image transformation in the future.
 
+I largely followed [this tutorial](https://spacejelly.dev/posts/how-to-create-an-image-placeholder-service-api-with-cloudinary-netlify-functions) to get started, and then customized as needed. This is a good resource if you are new to Netlify or Cloudinary. 
+
 ## Contact
 
 You can contact me here on Github for issues with the site, or by email at jcdoran33@gmail.com
