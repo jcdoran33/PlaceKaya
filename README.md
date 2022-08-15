@@ -20,6 +20,10 @@ Below is an example URL:
 
 The numbers after the domain name and img segment in the URL (in this case, /900/600) specify the width and the height of the image. In this example, placeKaya would provide an image that is 900 pixels in width and 600 pixels in height.
 
+## Screenshot
+
+![screenshot](./assets/images/placekaya-screenshot.png)
+
 ## About
 
 This site and service was created by Jack Doran, as a tribute to the cuteness of my dog, Kaya. I will continue to develop this site, add additional pictures, and hopefully add more functionality for image transformation in the future.
