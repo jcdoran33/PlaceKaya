@@ -37,3 +37,10 @@
 footer:hover {
     font-weight: bold;
 }
+
+/* code block adjustments on home page*/
+/* #code {
+    background-color: #f8f9fa;
+    border: 1px dashed rgba(206, 206, 206, 0.89);
+    padding: 3px;
+} */
